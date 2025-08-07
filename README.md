@@ -1,2 +1,55 @@
-# IBM-DataAnalyst-Capstone
-IBM Data Analyst Capstone Project
+<h1>Data Insights for Tech Skills</h1>
+
+<h2>Project Overview</h2>
+
+<p>In this project, I am tasked with collecting data from multiple sources and identifying emerging in-demand tech skills. Using sources from job postings, training portals, and the Stack Overflow Developer Survey, I will employ data analysis techniques to uncover the current trends in programming skills, databases, and development tools. </p>
+
+<p>I will start with collecting data from web scraping, APIs, and datasets in various formats (.csv, Excel, databases). Then, I would clean and prepare the data using data wrangling techniques. After the data is ready, I will apply statistical analysis to identify key trends. Finally, I will visualize insights with IBM Cognos Analytics and share my findings through a presentation.</p> 
+
+<h2>Problem & Objective</h2>
+
+<p>IT consulting firms need to stay competitive presently by understanding the emerging tech skills. My role as a data analyst will contribute to this goal by identifying insights for the current standards. </p>
+
+<p>I will answer these questions: </p>
+
+<ul>
+  <li>Which programming languages are most in demand?</li>
+  <li>Which database technologies are currently most sought after?</li>
+  <li>Which Integrated Development Environments (IDEs) are the most popular?</li>
+</ul>
+
+<h2>Tools & Skills Used</h2>
+
+<ul>
+  <li><strong>Languages:</strong> Python, SQL, HTML, CSS</li>
+  <li><strong>Data Collection:</strong> Web scraping, APIs</li>
+  <li><strong>Data Wrangling:</strong> Cleaning, Normalizing</li>
+  <li><strong>Data Analysis:</strong> Exploratory, Statistical, Trends</li>
+  <li><strong>Data Visualization:</strong> Various Charts, Plots, or Graphs</li>
+  <li><strong>Dashboards:</strong> IBM Cognos Analytics, Dash</li>
+  <li><strong>Presenting:</strong> Powerpoint</li>
+</ul>
+
+<h2>Data Sources</h2>
+
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+<h2>Data Collection</h2>
+
+<h2>Data Wrangling</h2>
+
+<h2>Exploratory Data Analysis</h2>
+
+<h2>Data Visualization</h2>
+
+<h2>Dashboard Creation</h2>
+
+<h2>Presenting Findings</h2>
+
+
+
+

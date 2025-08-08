@@ -40,6 +40,10 @@
 
 <h2>Data Collection</h2>
 
+<h3>Data Collection Using Jobs API</h3>
+
+<p>To access the files for data collecting using the Jobs API, please navigate to this <a href = "https://github.com/FaiLuReH3Ro/API-Data-Collection">GitHub repository.</a></p>
+
 <h2>Data Wrangling</h2>
 
 <h2>Exploratory Data Analysis</h2>

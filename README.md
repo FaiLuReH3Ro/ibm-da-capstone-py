@@ -1,4 +1,6 @@
-<h1>Data Insights for Tech Skills</h1>
+<h1>Data Insights for Tech Skills</h1><br>
+
+> Note: To keep things organized, this project is split into multiple repositories. Please click on the respective links for each section to explore further details and access files.
 
 <h2>Project Overview</h2>
 

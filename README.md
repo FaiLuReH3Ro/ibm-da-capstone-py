@@ -36,7 +36,7 @@
 
 <ul>
   <li><strong>Languages:</strong> Python, SQL, HTML, CSS</li>
-  <li><strong>Data Collection:</strong> Web scraping, APIs</li>
+  <li><strong>Data Collection:</strong> Web scraping, Jobs API (Requests, BeautifulSoup, Pandas)</li>
   <li><strong>Data Wrangling:</strong> Cleaning, Normalizing</li>
   <li><strong>Data Analysis:</strong> Exploratory, Statistical, Trends</li>
   <li><strong>Data Visualization:</strong> Various Charts, Plots, or Graphs</li>
@@ -56,7 +56,17 @@
 
 <h3>Jobs API Data Collection</h3>
 
-<p>To access the files for data collecting using the Jobs API, please navigate to this <a href = "https://github.com/FaiLuReH3Ro/DataCollection-JobsAPI">GitHub repository.</a></p>
+<!--<p>To access the files for data collecting using the Jobs API, please navigate to this <a href = "https://github.com/FaiLuReH3Ro/DataCollection-JobsAPI">GitHub repository.</a></p>-->
+
+[Data Collection - Jobs API repository](https://github.com/FaiLuReH3Ro/DataCollection-JobsAPI)
+
+### Web Scraping Data Collection
+
+[Data Collection - Web Scraping repository](https://github.com/FaiLuReH3Ro/DataCollection-WebScraping)
+
+### Dataset Exploration
+
+[Exploring Dataset repository](https://github.com/FaiLuReH3Ro/ExploringDataset) 
 
 <h2 id = 'data-wrangling'>Data Wrangling</h2>
 

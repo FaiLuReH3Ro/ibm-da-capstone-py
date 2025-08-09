@@ -2,17 +2,17 @@
 
 > Note: To keep things organized, this project is split into multiple repositories. Please click on the respective links for each section to explore further details and access files.
 
-<details>
-  <summary>Sections</summary>
+
+## Sections
   <ul>
     <li><a href = '#data-collection'>Data Collection</a></li>
-    <li><a>Data Wrangling</a></li>
-    <li><a>Exploratory Data Analysis</a></li>
-    <li><a>Data Visualization</a></li>
-    <li><a>Dashboard Creation</a></li>
-    <li><a>Presenting Findings</a></li>
+    <li><a href = '#data-wrangling'>Data Wrangling</a></li>
+    <li><a href = '#exploratory-data'>Exploratory Data Analysis</a></li>
+    <li><a href = '#data-visualization'>Data Visualization</a></li>
+    <li><a href = '#dashboard'>Dashboard Creation</a></li>
+    <li><a href = '#presenting'>Presenting Findings</a></li>
   </ul>
-</details>
+
 
 <h2>Project Overview</h2>
 

@@ -2,6 +2,18 @@
 
 > Note: To keep things organized, this project is split into multiple repositories. Please click on the respective links for each section to explore further details and access files.
 
+<details>
+  <summary>Sections</summary>
+  <ul>
+    <li><a href = '#data-collection'>Data Collection</a></li>
+    <li><a>Data Wrangling</a></li>
+    <li><a>Exploratory Data Analysis</a></li>
+    <li><a>Data Visualization</a></li>
+    <li><a>Dashboard Creation</a></li>
+    <li><a>Presenting Findings</a></li>
+  </ul>
+</details>
+
 <h2>Project Overview</h2>
 
 <p>In this project, I am tasked with collecting data from multiple sources and identifying emerging in-demand tech skills. Using sources from job postings, training portals, and the Stack Overflow Developer Survey, I will employ data analysis techniques to uncover the current trends in programming skills, databases, and development tools. </p>
@@ -40,21 +52,21 @@
   <li></li>
 </ul>
 
-<h2>Data Collection</h2>
+<h2 id = 'data-collection'>Data Collection</h2>
 
 <h3>Jobs API Data Collection</h3>
 
 <p>To access the files for data collecting using the Jobs API, please navigate to this <a href = "https://github.com/FaiLuReH3Ro/DataCollection-JobsAPI">GitHub repository.</a></p>
 
-<h2>Data Wrangling</h2>
+<h2 id = 'data-wrangling'>Data Wrangling</h2>
 
-<h2>Exploratory Data Analysis</h2>
+<h2 id = 'exploratory-data'>Exploratory Data Analysis</h2>
 
-<h2>Data Visualization</h2>
+<h2 id = 'data-visualization'>Data Visualization</h2>
 
-<h2>Dashboard Creation</h2>
+<h2 id = 'dashboard'>Dashboard Creation</h2>
 
-<h2>Presenting Findings</h2>
+<h2 id = 'presenting'>Presenting Findings</h2>
 
 
 

@@ -70,6 +70,8 @@
 
 <h2 id = 'data-wrangling'>Data Wrangling</h2>
 
+[Data Wrangling - Python repository](https://github.com/FaiLuReH3Ro/DataWrangling-Py)
+
 <h2 id = 'exploratory-data'>Exploratory Data Analysis</h2>
 
 <h2 id = 'data-visualization'>Data Visualization</h2>

@@ -74,6 +74,8 @@
 
 <h2 id = 'exploratory-data'>Exploratory Data Analysis</h2>
 
+[Exploritory Data Analysis - Python repository](https://github.com/FaiLuReH3Ro/ExploritoryDA-Py)
+
 <h2 id = 'data-visualization'>Data Visualization</h2>
 
 <h2 id = 'dashboard'>Dashboard Creation</h2>

@@ -75,6 +75,7 @@
 
 <h2 id = 'exploratory-data'>Exploratory Data Analysis</h2>
 
+### EDA
 [Exploritory Data Analysis - Python repository](https://github.com/FaiLuReH3Ro/ExploritoryDA-Py)
 
 ### Handling Outliers

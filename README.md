@@ -36,10 +36,11 @@
 
 <ul>
   <li><strong>Languages:</strong> Python, SQL, HTML, CSS</li>
+  <li><strong>Tools:</strong> Visual Studio Code, Jupyter notebook</li>
   <li><strong>Data Collection:</strong> Web scraping, Jobs API (Requests, BeautifulSoup, Pandas)</li>
-  <li><strong>Data Wrangling:</strong> Cleaning, Normalizing</li>
-  <li><strong>Data Analysis:</strong> Exploratory, Statistical, Trends</li>
-  <li><strong>Data Visualization:</strong> Various Charts, Plots, or Graphs</li>
+  <li><strong>Data Wrangling:</strong> Cleaning, Normalizing (Pandas, Numpy)</li>
+  <li><strong>Data Analysis:</strong> Exploratory, Statistical, Trends (Pandas, Matplotlib, Seaborn, SQLite3, Numpy)</li>
+  <li><strong>Data Visualization:</strong> Various Charts, Plots, or Graphs (Pandas, Matplotlib, Seaborn, SQLite3)</li>
   <li><strong>Dashboards:</strong> IBM Cognos Analytics, Dash</li>
   <li><strong>Presenting:</strong> Powerpoint</li>
 </ul>
@@ -75,6 +76,12 @@
 <h2 id = 'exploratory-data'>Exploratory Data Analysis</h2>
 
 [Exploritory Data Analysis - Python repository](https://github.com/FaiLuReH3Ro/ExploritoryDA-Py)
+
+### Handling Outliers
+[Handling Outliers - Python repository](https://github.com/FaiLuReH3Ro/Outliers-Py)
+
+### Finding Correlations
+[Finding Correlations - Python repository](https://github.com/FaiLuReH3Ro/Correlations-Py)
 
 <h2 id = 'data-visualization'>Data Visualization</h2>
 

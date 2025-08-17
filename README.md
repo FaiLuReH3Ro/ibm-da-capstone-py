@@ -41,7 +41,7 @@
   <li><strong>Data Wrangling:</strong> Cleaning, Normalizing (Pandas, Numpy)</li>
   <li><strong>Data Analysis:</strong> Exploratory, Statistical, Trends (Pandas, Matplotlib, Seaborn, SQLite3, Numpy)</li>
   <li><strong>Data Visualization:</strong> Various Charts, Plots, or Graphs (Pandas, Matplotlib, Seaborn, SQLite3)</li>
-  <li><strong>Dashboards:</strong> IBM Cognos Analytics, Dash</li>
+  <li><strong>Dashboards:</strong> Tableau, Dash</li>
   <li><strong>Presenting:</strong> Powerpoint</li>
 </ul>
 

@@ -86,7 +86,7 @@
 
 <h2 id = 'data-visualization'>Data Visualization</h2>
 
-[Data Visualization - Python](https://github.com/FaiLuReH3Ro/DataVisualization-Py)
+[Data Visualization - Python repository](https://github.com/FaiLuReH3Ro/DataVisualization-Py)
 
 <h2 id = 'dashboard'>Dashboard Creation</h2>
 

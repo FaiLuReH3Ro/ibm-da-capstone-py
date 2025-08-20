@@ -59,40 +59,44 @@
 
 <!--<p>To access the files for data collecting using the Jobs API, please navigate to this <a href = "https://github.com/FaiLuReH3Ro/DataCollection-JobsAPI">GitHub repository.</a></p>-->
 
-[Data Collection - Jobs API repository](https://github.com/FaiLuReH3Ro/DataCollection-JobsAPI)
+[Data Collection - Jobs API repository](https://github.com/FaiLuReH3Ro/data-collection-jobs-api)
 
 ### Web Scraping Data Collection
 
-[Data Collection - Web Scraping repository](https://github.com/FaiLuReH3Ro/DataCollection-WebScraping)
+[Data Collection - Web Scraping repository](https://github.com/FaiLuReH3Ro/data-collection-web-scraping)
 
 ### Dataset Exploration
 
-[Exploring Dataset repository](https://github.com/FaiLuReH3Ro/ExploringDataset) 
+[Exploring Dataset repository](https://github.com/FaiLuReH3Ro/exploring-dataset) 
 
 <h2 id = 'data-wrangling'>Data Wrangling</h2>
 
-[Data Wrangling - Python repository](https://github.com/FaiLuReH3Ro/DataWrangling-Py)
+[Data Wrangling - Python repository](https://github.com/FaiLuReH3Ro/data-wrangling-py)
 
 <h2 id = 'exploratory-data'>Exploratory Data Analysis</h2>
 
 ### EDA
-[Exploritory Data Analysis - Python repository](https://github.com/FaiLuReH3Ro/ExploritoryDA-Py)
+[Exploritory Data Analysis - Python repository](https://github.com/FaiLuReH3Ro/exploritory-da-py)
 
 ### Handling Outliers
-[Handling Outliers - Python repository](https://github.com/FaiLuReH3Ro/Outliers-Py)
+[Handling Outliers - Python repository](https://github.com/FaiLuReH3Ro/outliers-py)
 
 ### Finding Correlations
-[Finding Correlations - Python repository](https://github.com/FaiLuReH3Ro/Correlations-Py)
+[Finding Correlations - Python repository](https://github.com/FaiLuReH3Ro/correlations-py)
 
 <h2 id = 'data-visualization'>Data Visualization</h2>
 
-[Data Visualization - Python repository](https://github.com/FaiLuReH3Ro/DataVisualization-Py)
+[Data Visualization - Python repository](https://github.com/FaiLuReH3Ro/data-visualization-py)
 
 <h2 id = 'dashboard'>Dashboard Creation</h2>
 
 ### Tableau Dashboard
 
 [Survey Results Dashboard](https://public.tableau.com/views/SurveyResultsDashboard_17555489432820/CurrentTechnologyUsage?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+### Plotly Dash Dashboard
+
+[Stack Overflow Survey Dashboard](https://github.com/FaiLuReH3Ro/dev-survey-dashboard)
 
 <h2 id = 'presenting'>Presenting Findings</h2>
 

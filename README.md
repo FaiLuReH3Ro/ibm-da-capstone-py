@@ -115,8 +115,8 @@ These are some sources used in the beginning process, but ultimately not used in
 
 [Stack Overflow Survey Dashboard](https://github.com/FaiLuReH3Ro/dev-survey-dashboard)
 
-<h2 id = 'presenting'>Presenting Findings</h2>
+<h2 id = 'presenting'>Data Presenting</h2>
 
-
+[Developer Survey Presentation repository](https://github.com/FaiLuReH3Ro/dev-survey-presentation)
 
 

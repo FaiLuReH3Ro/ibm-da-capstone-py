@@ -22,7 +22,7 @@
 
 <h2>Problem & Objective</h2>
 
-<p>Technology skills evolve quickly, making it difficult for companies to align talent with demand. IT consulting firms need to stay competitive presently by understanding the emerging tech skills. My goals is to help organizations focus hiring,
+<p>Technology skills evolve quickly, making it difficult for companies to align talent with demand. IT consulting firms need to stay competitive presently by understanding the emerging tech skills. My goal is to help organizations focus hiring,
 training, and investments in the right areas by providing data-driven insights and predictive analysis into which programming languages, databases, and tools are most in-demand. </p>
 
 <p>I will answer these questions: </p>
@@ -93,7 +93,7 @@ These are some sources used in the beginning process, but ultimately not used in
 <h2 id = 'exploratory-data'>Exploratory Data Analysis</h2>
 
 ### EDA
-[Exploritory Data Analysis - Python repository](https://github.com/FaiLuReH3Ro/exploritory-da-py)
+[Exploratory Data Analysis - Python repository](https://github.com/FaiLuReH3Ro/exploritory-da-py)
 
 ### Handling Outliers
 [Handling Outliers - Python repository](https://github.com/FaiLuReH3Ro/outliers-py)

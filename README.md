@@ -1,6 +1,6 @@
 <h1>Data Insights for Tech Skills</h1><br>
 
-> Note: To keep things organized, this project is split into multiple repositories. Please click on the respective links for each section to explore further details and access files.
+> Note: This project is split into multiple repositories to keep things organized. You can click on the respective links for each section to explore further details and access files.
 
 
 ## Sections
@@ -16,14 +16,14 @@
 
 <h2>Project Scenario</h2>
 
-<p>In this project, I am tasked with collecting data from multiple sources and identifying emerging in-demand tech skills. Using sources from job postings, training portals, and the Stack Overflow Developer Survey, I will employ data analysis techniques to uncover the current trends in programming skills, databases, and development tools. </p>
+<p>In this project, I collect data from multiple sources and identify emerging in-demand tech skills. Using sources from job postings, training portals, and the Stack Overflow Developer Survey, I will employ data analysis techniques to uncover the current trends in programming skills, databases, and development tools. </p>
 
 <p>I will start with collecting data from web scraping, APIs, and datasets in various formats (.csv, Excel, databases). Then, I would clean and prepare the data using data wrangling techniques. After the data is ready, I will apply exploratory analysis to identify key trends. I will then proceed with visualizing insights about the top technology trends. Finally, I will create a dashboard with Tableau and share my findings through a presentation.</p> 
 
 <h2>Problem & Objective</h2>
 
-<p>Technology skills evolve quickly, making it difficult for companies to align talent with demand. IT consulting firms need to stay competitive presently by understanding the emerging tech skills. My goal is to help organizations focus hiring,
-training, and investments in the right areas by providing data-driven insights and predictive analysis into which programming languages, databases, and tools are most in-demand. </p>
+<p>Technology skills evolve quickly, making it difficult for companies to align talent with demand. IT consulting firms must stay competitive by understanding emerging tech skills. I aim to help organizations focus hiring,
+training, and investments in the right areas by providing data-driven insights and predictive analysis into which programming languages, databases, and tools are most in demand. </p>
 
 <p>I will answer these questions: </p>
 
@@ -50,9 +50,9 @@ training, and investments in the right areas by providing data-driven insights a
 
 ### Primary Data Source
 
-The primary dataset used is the 2024 Stack Overflow global survey. Stack Overflow is a Q&A website for programmers where developers ask coding questions and get answers from the community. The survey aims to capture insights on developers’ experience, tools, technologies, and preferences, offering a snapshot of the software development landscape.
+The primary dataset used is the 2024 Stack Overflow global survey. Stack Overflow is a Q&A website for programmers where developers ask coding questions and get answers from the community. The survey aims to capture insights on developers’ experiences, tools, technologies, and preferences, offering a snapshot of the software development landscape.
 
-[Original Source](https://stackoverflow.blog/2024/08/06/2024-developer-survey/) (Stack Overflow) <br>
+[Original Source](https://stackoverflow.blog/2024/08/06/2into4-developer-survey/) (Stack Overflow) <br>
 
 [Original Dataset](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/n01PQ9pSmiRX6520flujwQ/survey-data.csv) (Downloads a CSV)
 
@@ -72,27 +72,40 @@ These are some sources used in the beginning process, but ultimately not used in
 
 <h2 id = 'data-collection'>Data Collection</h2>
 
+The data collection section is the first step of the data analysis process. In this stage, I will gather data from the Jobs API, web scraping, and the Stack Overflow developer survey. 
+
 <h3>Jobs API Data Collection</h3>
 
-<!--<p>To access the files for data collecting using the Jobs API, please navigate to this <a href = "https://github.com/FaiLuReH3Ro/DataCollection-JobsAPI">GitHub repository.</a></p>-->
+I worked with the Jobs API provided by IBM to collect and analyze job posting data. Using Python, Pandas, and Requests in a Jupyter Notebook, I processed JSON data to identify job demand across technologies and locations. The results were exported to Excel for further analysis, providing insights into hiring demands. Although the insights from this section were not included in the final presentation, the process provided valuable hands-on experience.
 
 [Data Collection - Jobs API repository](https://github.com/FaiLuReH3Ro/data-collection-jobs-api)
 
 ### Web Scraping Data Collection
 
+I utilized web scraping techniques with Python to extract information about popular programming languages from an IBM Cloud website. Using Pandas, Beautiful Soup, and Requests in a Jupyter Notebook, I scraped the names and average salaries corresponding to programming languages before exporting the data to a CSV file for potential future use. Even though the scraped data were not applied in the final analysis, this step offered valuable experience in web scraping data collection. 
+
 [Data Collection - Web Scraping repository](https://github.com/FaiLuReH3Ro/data-collection-web-scraping)
 
 ### Dataset Exploration
 
+As an initial step, I explored the Stack Overflow survey dataset in Jupyter Notebook using Python and Pandas. I examined the dataset’s structure, including row count, column names, and data types, to gain familiarity with the data before deeper analysis.
+
 [Exploring Dataset repository](https://github.com/FaiLuReH3Ro/exploring-dataset) 
 
 <h2 id = 'data-wrangling'>Data Wrangling</h2>
+
+Data wrangling is an essential step in data analysis. Since raw datasets often contain inconsistencies or missing values, they must be cleaned and prepared to enable accurate and reliable analysis.
+
+I applied data wrangling techniques in Python to clean the dataset before performing the analysis. Using Python libraries such as Pandas and Numpy in a Jupyter Notebook, I removed duplicate rows, imputed missing values, performed data normalization, and dropped irrelevant columns. The imputing technique generally replaces missing numeric data with the average and replaces missing categorical data with the most frequent. However, I purposely did not impute every missing value. Since the objective is to gather insights into developers' technologies, I left those columns alone because I did not want to affect the results by skewing the data. Additionally, I dropped columns that will not contribute to the final analysis to improve efficiency and reduce loading times. 
 
 [Data Wrangling - Python repository](https://github.com/FaiLuReH3Ro/data-wrangling-py)
 
 <h2 id = 'exploratory-data'>Exploratory Data Analysis</h2>
 
 ### EDA
+
+I conducted Exploratory Data Analysis (EDA) on the cleaned dataset using Python (Pandas, NumPy, Matplotlib, Seaborn) to explore distributions and relationships across multiple variables. 
+
 [Exploratory Data Analysis - Python repository](https://github.com/FaiLuReH3Ro/exploritory-da-py)
 
 ### Handling Outliers

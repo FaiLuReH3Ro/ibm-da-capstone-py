@@ -50,7 +50,7 @@ training, and investments in the right areas by providing data-driven insights a
 
 ### Primary Data Source
 
-The primary dataset used is the 2024 Stack Overflow global survey. Stack Overflow is a Q&A website for programmers where developers ask coding questions and get answers from the community. The survey aims to capture insights on developers’ experiences, tools, technologies, and preferences, offering a snapshot of the software development landscape.
+The primary dataset used is the 2024 Stack Overflow global survey. Stack Overflow is a Q&A website for programmers where developers ask coding questions and get answers from the community. The survey aims to capture insights on developers' experiences, tools, technologies, and preferences, offering a snapshot of the software development landscape.
 
 [Original Source](https://stackoverflow.blog/2024/08/06/2into4-developer-survey/) (Stack Overflow) <br>
 
@@ -88,7 +88,7 @@ I utilized web scraping techniques with Python to extract information about popu
 
 ### Dataset Exploration
 
-As an initial step, I explored the Stack Overflow survey dataset in Jupyter Notebook using Python and Pandas. I examined the dataset’s structure, including row count, column names, and data types, to gain familiarity with the data before deeper analysis.
+As an initial step, I explored the Stack Overflow survey dataset in Jupyter Notebook using Python and Pandas. I examined the dataset's structure, including row count, column names, and data types, to gain familiarity with the data before deeper analysis.
 
 [Exploring Dataset repository](https://github.com/FaiLuReH3Ro/exploring-dataset) 
 
@@ -104,17 +104,23 @@ I applied data wrangling techniques in Python to clean the dataset before perfor
 
 ### EDA
 
-I conducted Exploratory Data Analysis (EDA) on the cleaned dataset using Python (Pandas, NumPy, Matplotlib, Seaborn) to explore distributions and relationships across multiple variables. 
+I conducted Exploratory Data Analysis (EDA) on the cleaned dataset using Python to explore distributions and relationships across multiple variables. Using visualization libraries like Matplotlib and Seaborn, I created bar, grouped and stacked bar charts, histograms, and pie charts to identify trends and insights outside of the data about the technologies. 
 
 [Exploratory Data Analysis - Python repository](https://github.com/FaiLuReH3Ro/exploritory-da-py)
 
 ### Handling Outliers
 [Handling Outliers - Python repository](https://github.com/FaiLuReH3Ro/outliers-py)
 
+In this section, I addressed outliers to improve the variance in the compensation data. I used Python, Pandas, SQL, and SQLite in a Jupyter Notebook to load the clean dataset into a database and identify outliers in the two compensation columns. Outliers were removed to ensure better visualizations, and the results were stored in a separate database table for future use. I visualized the no-outlier data with histograms, bar charts, and boxplots to better understand the distribution of the compensation data. 
+
 ### Finding Correlations
 [Finding Correlations - Python repository](https://github.com/FaiLuReH3Ro/correlations-py)
 
+Using the tables in the created database in SQLite, I will explore the data further by finding correlations and trends between various columns. I utilized Python visualization libraries such as Matplotlib and Seaborn to create scatter plots, line plots, and a heat map to show trends and correlations between numeric data. 
+
 <h2 id = 'data-visualization'>Data Visualization</h2>
+
+In this part, I will apply data visualization in Python to discover insights about the key objectives. Using Matplotlib and Seaborn, I visualized horizontal bar charts to display the distribution of the top programming languages, databases, web frameworks, platforms, collaboration tools, and tech tools for both used and desired cases. These visualizations will serve as the key indicators for finding the current popular technologies and future trends. 
 
 [Data Visualization - Python repository](https://github.com/FaiLuReH3Ro/data-visualization-py)
 
@@ -122,13 +128,19 @@ I conducted Exploratory Data Analysis (EDA) on the cleaned dataset using Python 
 
 ### Tableau Dashboard
 
+I applied dashboard creation skills to create a shareable and interactive dashboard with Tableau. Users can easily explore and find information about the current technology usage, future usage, and survey demographics. 
+
 [Survey Results Dashboard](https://public.tableau.com/views/SurveyResultsDashboard_17555489432820/CurrentTechnologyUsage?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ### Plotly Dash Dashboard
 
+As a bonus project, I decided to create a dashboard with the Dash framework from scratch. I applied Python programming with the Plotly library to create an interactive dashboard in the form of a live web application. Similar to the Tableau dashboard, it contains charts about current technology trends, future trends, and demographics. 
+
 [Stack Overflow Survey Dashboard](https://github.com/FaiLuReH3Ro/dev-survey-dashboard)
 
 <h2 id = 'presenting'>Data Presenting</h2>
+
+This section marks the final step of the process. After creating the dashboards and uncovering insights on the top technologies, I will make a report highlighting my findings and implications. Using data-driven insights and predictive analysis, I aim to help organizations focus on investing in the popular programming languages, databases, and tools.
 
 [Developer Survey Presentation repository](https://github.com/FaiLuReH3Ro/dev-survey-presentation)
 

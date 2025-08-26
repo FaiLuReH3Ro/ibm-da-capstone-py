@@ -1,9 +1,9 @@
-<h1>Data Insights for Tech Skills</h1><br>
+<h1>📊 Data Insights for Tech Skills</h1><br>
 
 > Note: This project is split into multiple repositories to keep things organized. You can click on the respective links for each section to explore further details and access files.
 
 
-## Sections
+## 📂 Sections
   <ul>
     <li><a href = '#data-collection'>Data Collection</a></li>
     <li><a href = '#data-wrangling'>Data Wrangling</a></li>
@@ -14,13 +14,13 @@
   </ul>
 
 
-<h2>Project Scenario</h2>
+<h2> 🎯 Project Scenario</h2>
 
 <p>In this project, I collect data from multiple sources and identify emerging in-demand tech skills. Using sources from job postings, training portals, and the Stack Overflow Developer Survey, I will employ data analysis techniques to uncover the current trends in programming skills, databases, and development tools. </p>
 
 <p>I will start with collecting data from web scraping, APIs, and datasets in various formats (.csv, Excel, databases). Then, I would clean and prepare the data using data wrangling techniques. After the data is ready, I will apply exploratory analysis to identify key trends. I will then proceed with visualizing insights about the top technology trends. Finally, I will create a dashboard with Tableau and share my findings through a presentation.</p> 
 
-<h2>Problem & Objective</h2>
+<h2>❓ Problem & Objective 🎯</h2>
 
 <p>Technology skills evolve quickly, making it difficult for companies to align talent with demand. IT consulting firms must stay competitive by understanding emerging tech skills. I aim to help organizations focus hiring,
 training, and investments in the right areas by providing data-driven insights and predictive analysis into which programming languages, databases, and tools are most in demand. </p>
@@ -33,7 +33,7 @@ training, and investments in the right areas by providing data-driven insights a
   <li>Which Integrated Development Environments (IDEs) are the most popular?</li>
 </ul>
 
-<h2>Tools & Skills Used</h2>
+<h2>🛠️ Tools & Skills Used</h2>
 
 <ul>
   <li><strong>Languages:</strong> Python, SQL</li>
@@ -46,7 +46,7 @@ training, and investments in the right areas by providing data-driven insights a
   <li><strong>Presenting:</strong> Microsoft Powerpoint</li>
 </ul>
 
-<h2>Data Sources</h2>
+<h2>🌐 Data Sources</h2>
 
 ### Primary Data Source
 
@@ -70,7 +70,7 @@ These are some sources used in the beginning process, but ultimately not used in
 
 > Website on the IBM Cloud
 
-<h2 id = 'data-collection'>Data Collection</h2>
+<h2 id = 'data-collection'>📝 Data Collection</h2>
 
 The data collection section is the first step of the data analysis process. In this stage, I will gather data from the Jobs API, web scraping, and the Stack Overflow developer survey. 
 
@@ -92,7 +92,7 @@ As an initial step, I explored the Stack Overflow survey dataset in Jupyter Note
 
 [Exploring Dataset repository](https://github.com/FaiLuReH3Ro/exploring-dataset) 
 
-<h2 id = 'data-wrangling'>Data Wrangling</h2>
+<h2 id = 'data-wrangling'>🔧 Data Wrangling</h2>
 
 Data wrangling is an essential step in data analysis. Since raw datasets often contain inconsistencies or missing values, they must be cleaned and prepared to enable accurate and reliable analysis.
 
@@ -100,7 +100,7 @@ I applied data wrangling techniques in Python to clean the dataset before perfor
 
 [Data Wrangling - Python repository](https://github.com/FaiLuReH3Ro/data-wrangling-py)
 
-<h2 id = 'exploratory-data'>Exploratory Data Analysis</h2>
+<h2 id = 'exploratory-data'>🔍 Exploratory Data Analysis</h2>
 
 ### EDA
 
@@ -118,13 +118,13 @@ In this section, I addressed outliers to improve the variance in the compensatio
 
 Using the tables in the created database in SQLite, I will explore the data further by finding correlations and trends between various columns. I utilized Python visualization libraries such as Matplotlib and Seaborn to create scatter plots, line plots, and a heat map to show trends and correlations between numeric data. 
 
-<h2 id = 'data-visualization'>Data Visualization</h2>
+<h2 id = 'data-visualization'>📈 Data Visualization</h2>
 
 In this part, I will apply data visualization in Python to discover insights about the key objectives. Using Matplotlib and Seaborn, I visualized horizontal bar charts to display the distribution of the top programming languages, databases, web frameworks, platforms, collaboration tools, and tech tools for both used and desired cases. These visualizations will serve as the key indicators for finding the current popular technologies and future trends. 
 
 [Data Visualization - Python repository](https://github.com/FaiLuReH3Ro/data-visualization-py)
 
-<h2 id = 'dashboard'>Dashboard Creation</h2>
+<h2 id = 'dashboard'>🖥️ Dashboard Creation</h2>
 
 ### Tableau Dashboard
 
@@ -138,7 +138,7 @@ As a bonus project, I created a dashboard with the Dash framework from scratch. 
 
 [Stack Overflow Survey Dashboard](https://github.com/FaiLuReH3Ro/dev-survey-dashboard)
 
-<h2 id = 'presenting'>Data Presenting</h2>
+<h2 id = 'presenting'>🎤 Data Presenting</h2>
 
 This section marks the final step of the process. After creating the dashboards and uncovering insights on the top technologies, I will make a report highlighting my findings and implications. Using data-driven insights and predictive analysis, I aim to help organizations focus on investing in the popular programming languages, databases, and tools.
 

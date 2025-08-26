@@ -128,13 +128,13 @@ In this part, I will apply data visualization in Python to discover insights abo
 
 ### Tableau Dashboard
 
-I applied dashboard creation skills to create a shareable and interactive dashboard with Tableau. Users can easily explore and find information about the current technology usage, future usage, and survey demographics. 
+I applied dashboard creation skills to create a shareable and interactive dashboard with Tableau. Users can easily explore and find information about technology usage, future usage, and survey demographics. 
 
 [Survey Results Dashboard](https://public.tableau.com/views/SurveyResultsDashboard_17555489432820/CurrentTechnologyUsage?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ### Plotly Dash Dashboard
 
-As a bonus project, I decided to create a dashboard with the Dash framework from scratch. I applied Python programming with the Plotly library to create an interactive dashboard in the form of a live web application. Similar to the Tableau dashboard, it contains charts about current technology trends, future trends, and demographics. 
+As a bonus project, I created a dashboard with the Dash framework from scratch. I applied Python programming with the Plotly library to create an interactive dashboard as a live web application. Like the Tableau dashboard, it contains charts about current technology trends, future trends, and demographics. 
 
 [Stack Overflow Survey Dashboard](https://github.com/FaiLuReH3Ro/dev-survey-dashboard)
 

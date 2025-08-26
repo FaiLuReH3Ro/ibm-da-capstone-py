@@ -1,4 +1,4 @@
-<h1>📊 Data Insights for Tech Skills</h1><br>
+<h1>Data Insights for Tech Skills 📊</h1><br>
 
 > Note: This project is split into multiple repositories to keep things organized. You can click on the respective links for each section to explore further details and access files.
 
@@ -20,7 +20,7 @@
 
 <p>I will start with collecting data from web scraping, APIs, and datasets in various formats (.csv, Excel, databases). Then, I would clean and prepare the data using data wrangling techniques. After the data is ready, I will apply exploratory analysis to identify key trends. I will then proceed with visualizing insights about the top technology trends. Finally, I will create a dashboard with Tableau and share my findings through a presentation.</p> 
 
-<h2>❓ Problem & Objective 🎯</h2>
+<h2>❓ Problem & Objective 🚀</h2>
 
 <p>Technology skills evolve quickly, making it difficult for companies to align talent with demand. IT consulting firms must stay competitive by understanding emerging tech skills. I aim to help organizations focus hiring,
 training, and investments in the right areas by providing data-driven insights and predictive analysis into which programming languages, databases, and tools are most in demand. </p>

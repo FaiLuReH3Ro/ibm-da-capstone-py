@@ -78,7 +78,6 @@ The data collection section is the first step of the data analysis process. In t
 
 I worked with the Jobs API provided by IBM to collect and analyze job posting data. Using Python, Pandas, and Requests in a Jupyter Notebook, I processed JSON data to identify job demand across technologies and locations. The results were exported to Excel for further analysis, providing insights into hiring demands. Although the insights from this section were not included in the final presentation, the process provided valuable hands-on experience.
 
-
 <img src = 'Pictures/1.PNG'>
 
 <img src = 'Pictures/2.PNG'>
@@ -89,11 +88,17 @@ I worked with the Jobs API provided by IBM to collect and analyze job posting da
 
 I utilized web scraping techniques with Python to extract information about popular programming languages from an IBM Cloud website. Using Pandas, Beautiful Soup, and Requests in a Jupyter Notebook, I scraped the names and average salaries corresponding to programming languages before exporting the data to a CSV file for potential future use. Even though the scraped data were not applied in the final analysis, this step offered valuable experience in web scraping data collection. 
 
+<img src = 'Pictures/3.PNG'>
+
+<img src = 'Pictures/4.PNG'>
+
 👉 [Data Collection - Web Scraping repository](https://github.com/FaiLuReH3Ro/data-collection-web-scraping)
 
 ### Dataset Exploration
 
 As an initial step, I explored the Stack Overflow survey dataset in Jupyter Notebook using Python and Pandas. I examined the dataset's structure, including row count, column names, and data types, to gain familiarity with the data before deeper analysis.
+
+<img src = 'Pictures/5.PNG'>
 
 👉 [Exploring Dataset repository](https://github.com/FaiLuReH3Ro/exploring-dataset) 
 
@@ -103,6 +108,10 @@ Data wrangling is an essential step in data analysis. Since raw datasets often c
 
 I applied data wrangling techniques in Python to clean the dataset before performing the analysis. Using Python libraries such as Pandas and Numpy in a Jupyter Notebook, I removed duplicate rows, imputed missing values, performed data normalization, and dropped irrelevant columns. The imputing technique generally replaces missing numeric data with the average and replaces missing categorical data with the most frequent. However, I purposely did not impute every missing value. Since the objective is to gather insights into developers' technologies, I left those columns alone because I did not want to affect the results by skewing the data. Additionally, I dropped columns that will not contribute to the final analysis to improve efficiency and reduce loading times. 
 
+<img src = 'Pictures/6.PNG'>
+
+<img src = 'Pictures/7.PNG'>
+
 👉 [Data Wrangling - Python repository](https://github.com/FaiLuReH3Ro/data-wrangling-py)
 
 <h2 id = 'exploratory-data'>🔍 Exploratory Data Analysis</h2>
@@ -111,11 +120,21 @@ I applied data wrangling techniques in Python to clean the dataset before perfor
 
 I conducted Exploratory Data Analysis (EDA) on the cleaned dataset using Python to explore distributions and relationships across multiple variables. Using visualization libraries like Matplotlib and Seaborn, I created bar, grouped and stacked bar charts, histograms, and pie charts to identify trends and insights outside of the data about the technologies. 
 
+<img src = 'Pictures/8.PNG'>
+
+<img src = 'Pictures/9.PNG'>
+
 👉 [Exploratory Data Analysis - Python repository](https://github.com/FaiLuReH3Ro/exploritory-da-py)
 
 ### Handling Outliers
 
 In this section, I addressed outliers to improve the variance in the compensation data. I used Python, Pandas, SQL, and SQLite in a Jupyter Notebook to load the clean dataset into a database and identify outliers in the two compensation columns. Outliers were removed to ensure better visualizations, and the results were stored in a separate database table for future use. I visualized the no-outlier data with histograms, bar charts, and boxplots to better understand the distribution of the compensation data. 
+
+<img src = 'Pictures/10.PNG'>
+
+<img src = 'Pictures/11.PNG'>
+
+<img src = 'Pictures/12.PNG'>
 
 👉 [Handling Outliers - Python repository](https://github.com/FaiLuReH3Ro/outliers-py)
 
@@ -123,11 +142,19 @@ In this section, I addressed outliers to improve the variance in the compensatio
 
 Using the tables in the created database in SQLite, I will explore the data further by finding correlations and trends between various columns. I utilized Python visualization libraries such as Matplotlib and Seaborn to create scatter plots, line plots, and a heat map to show trends and correlations between numeric data. 
 
+<img src = 'Pictures/13.PNG'>
+
+<img src = 'Pictures/14.PNG'>
+
 👉 [Finding Correlations - Python repository](https://github.com/FaiLuReH3Ro/correlations-py)
 
 <h2 id = 'data-visualization'>📈 Data Visualization</h2>
 
 In this part, I will apply data visualization in Python to discover insights about the key objectives. Using Matplotlib and Seaborn, I visualized horizontal bar charts to display the distribution of the top programming languages, databases, web frameworks, platforms, collaboration tools, and tech tools for both used and desired cases. These visualizations will serve as the key indicators for finding the current popular technologies and future trends. 
+
+<img src = 'Pictures/15.PNG'>
+
+<img src = 'Pictures/16.PNG'>
 
 👉 [Data Visualization - Python repository](https://github.com/FaiLuReH3Ro/data-visualization-py)
 
@@ -137,17 +164,23 @@ In this part, I will apply data visualization in Python to discover insights abo
 
 I applied dashboard creation skills to create a shareable and interactive dashboard with Tableau. Users can easily explore and find information about technology usage, future usage, and survey demographics. 
 
+<img src = 'Pictures/17.PNG'>
+
 👉 [Survey Results Dashboard](https://public.tableau.com/views/SurveyResultsDashboard_17555489432820/CurrentTechnologyUsage?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ### Plotly Dash Dashboard
 
 As a bonus project, I created a dashboard with the Dash framework from scratch. I applied Python programming with the Plotly library to create an interactive dashboard as a live web application. Like the Tableau dashboard, it contains charts about current technology trends, future trends, and demographics. 
 
+<img src = 'Pictures/18.PNG'>
+
 👉 [Stack Overflow Survey Dashboard](https://github.com/FaiLuReH3Ro/dev-survey-dashboard)
 
 <h2 id = 'presenting'>🎤 Data Presenting</h2>
 
 This section marks the final step of the process. After creating the dashboards and uncovering insights on the top technologies, I will make a report highlighting my findings and implications. Using data-driven insights and predictive analysis, I aim to help organizations focus on investing in the popular programming languages, databases, and tools.
+
+<img src = 'Pictures/19.PNG'>
 
 👉 [Developer Survey Presentation repository](https://github.com/FaiLuReH3Ro/dev-survey-presentation)
 

@@ -172,7 +172,7 @@ I applied dashboard creation skills to create a shareable and interactive dashbo
 
 As a bonus project, I created a dashboard with the Dash framework from scratch. I applied Python programming with the Plotly library to create an interactive dashboard as a live web application. Like the Tableau dashboard, it contains charts about current technology trends, future trends, and demographics. 
 
-👉 [Stack Overflow Survey Dashboard](https://github.com/FaiLuReH3Ro/dev-survey-dashboard)
+👉 [Stack Overflow Survey Dashboard repository](https://github.com/FaiLuReH3Ro/dev-survey-dashboard)
 
 <img src = 'Pictures/18.PNG'>
 

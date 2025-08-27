@@ -78,6 +78,11 @@ The data collection section is the first step of the data analysis process. In t
 
 I worked with the Jobs API provided by IBM to collect and analyze job posting data. Using Python, Pandas, and Requests in a Jupyter Notebook, I processed JSON data to identify job demand across technologies and locations. The results were exported to Excel for further analysis, providing insights into hiring demands. Although the insights from this section were not included in the final presentation, the process provided valuable hands-on experience.
 
+
+<img src = 'Pictures/1.PNG'>
+
+<img src = 'Pictures/2.PNG'>
+
 👉 [Data Collection - Jobs API repository](https://github.com/FaiLuReH3Ro/data-collection-jobs-api)
 
 ### Web Scraping Data Collection

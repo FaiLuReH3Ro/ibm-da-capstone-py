@@ -84,6 +84,8 @@ I worked with the Jobs API provided by IBM to collect and analyze job posting da
 
 <img src = 'Pictures/2.PNG'>
 
+<hr>
+
 ### Web Scraping Data Collection
 
 I utilized web scraping techniques with Python to extract information about popular programming languages from an IBM Cloud website. Using Pandas, Beautiful Soup, and Requests in a Jupyter Notebook, I scraped the names and average salaries corresponding to programming languages before exporting the data to a CSV file for potential future use. Even though the scraped data were not applied in the final analysis, this step offered valuable experience in web scraping data collection. 
@@ -93,6 +95,8 @@ I utilized web scraping techniques with Python to extract information about popu
 <img src = 'Pictures/3.PNG'>
 
 <img src = 'Pictures/4.PNG'>
+
+<hr>
 
 ### Dataset Exploration
 
@@ -126,6 +130,8 @@ I conducted Exploratory Data Analysis (EDA) on the cleaned dataset using Python 
 
 <img src = 'Pictures/9.PNG'>
 
+<hr>
+
 ### Handling Outliers
 
 In this section, I addressed outliers to improve the variance in the compensation data. I used Python, Pandas, SQL, and SQLite in a Jupyter Notebook to load the clean dataset into a database and identify outliers in the two compensation columns. Outliers were removed to ensure better visualizations, and the results were stored in a separate database table for future use. I visualized the no-outlier data with histograms, bar charts, and boxplots to better understand the distribution of the compensation data. 
@@ -137,6 +143,8 @@ In this section, I addressed outliers to improve the variance in the compensatio
 <img src = 'Pictures/11.PNG'>
 
 <img src = 'Pictures/12.PNG'>
+
+<hr>
 
 ### Finding Correlations
 
@@ -167,6 +175,8 @@ I applied dashboard creation skills to create a shareable and interactive dashbo
 👉 [Survey Results Dashboard](https://public.tableau.com/views/SurveyResultsDashboard_17555489432820/CurrentTechnologyUsage?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 <img src = 'Pictures/17.PNG'>
+
+<hr>
 
 ### Plotly Dash Dashboard
 

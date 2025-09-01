@@ -54,7 +54,7 @@ The primary dataset used is the 2024 Stack Overflow global survey. Stack Overflo
 
 🔗 [Original Source](https://stackoverflow.blog/2024/08/06/2into4-developer-survey/) (Stack Overflow) <br>
 
-📥 [Original Dataset](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/n01PQ9pSmiRX6520flujwQ/survey-data.csv) (Downloads a CSV)
+🔗 [Original Dataset](https://www.kaggle.com/datasets/failureh3ro/stack-overflow-survey-data-2024-subset) (Kaggle)
 
 > Note: This CSV file is a subset of the original data
 

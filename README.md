@@ -56,7 +56,7 @@ The primary dataset used is the 2024 Stack Overflow global survey. Stack Overflo
 
 🔗 [Original Dataset](https://www.kaggle.com/datasets/failureh3ro/stack-overflow-survey-data-2024-subset) (Kaggle)
 
-> Note: This CSV file is a subset of the original data
+> Note: The dataset is a subset of the original data
 
 ### Other Sources
 

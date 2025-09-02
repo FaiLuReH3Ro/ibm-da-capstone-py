@@ -124,7 +124,7 @@ I applied data wrangling techniques in Python to clean the dataset before perfor
 
 I conducted Exploratory Data Analysis (EDA) on the cleaned dataset using Python to explore distributions and relationships across multiple variables. Using visualization libraries like Matplotlib and Seaborn, I created bar, grouped and stacked bar charts, histograms, and pie charts to identify trends and insights outside of the data about the technologies. 
 
-👉 [Exploratory Data Analysis - Python repository](https://github.com/FaiLuReH3Ro/exploritory-da-py)
+👉 [Exploratory Data Analysis - Python repository](https://github.com/FaiLuReH3Ro/exploratory-da-py)
 
 <img src = 'Pictures/8.PNG'>
 

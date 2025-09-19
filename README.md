@@ -17,9 +17,9 @@
 
 <h2> 🎯 Project Scenario</h2>
 
-<p>In this project, I collect data from multiple sources and identify emerging in-demand tech skills. Using sources from job postings, training portals, and the Stack Overflow Developer Survey, I will employ data analysis techniques to uncover the current trends in programming skills, databases, and development tools. </p>
+I will utilize a subset of the 2024 Stack Overflow Developer Survey for this project to identify emerging in-demand tech skills. My approach will involve data analysis techniques to uncover current trends in programming skills, databases, and development tools.
 
-<p>I will start with collecting data from web scraping, APIs, and datasets in various formats (.csv, Excel, databases). Then, I would clean and prepare the data using data wrangling techniques. After the data is ready, I will apply exploratory analysis to identify key trends. I will then proceed with visualizing insights about the top technology trends. Finally, I will create a dashboard with Tableau and share my findings through a presentation.</p> 
+I will begin by cleaning and preparing the data using data wrangling techniques. Once the data is ready, I will conduct an exploratory analysis to identify compensation trends and use various charts to visualize distributions. Next, I will visualize insights regarding the top technology trends. Finally, I will create a dashboard using Tableau to present my findings.
 
 <h2>❓ Problem & Objective 🚀</h2>
 

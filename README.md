@@ -6,7 +6,7 @@
 
 ## 📂 Sections
   <ul>
-    <li><a href = '#data-collection'>Data Collection</a></li>
+    <!--<li><a href = '#data-collection'>Data Collection</a></li>-->
     <li><a href = '#data-wrangling'>Data Wrangling</a></li>
     <li><a href = '#exploratory-data'>Exploratory Data Analysis</a></li>
     <li><a href = '#data-visualization'>Data Visualization</a></li>
@@ -60,6 +60,7 @@ The primary dataset used is the 2024 Stack Overflow global survey. Stack Overflo
 > [!NOTE]
 > The dataset is a subset of the original data
 
+<!--
 ### Other Sources
 
 These are some sources used in the beginning process, but ultimately not used in the later stages. 
@@ -107,12 +108,13 @@ As an initial step, I explored the Stack Overflow survey dataset in Jupyter Note
 👉 [Exploring Dataset repository](https://github.com/FaiLuReH3Ro/exploring-dataset) 
 
 <img src = 'Pictures/5.PNG'>
-
+-->
 <h2 id = 'data-wrangling'>🔧 Data Wrangling</h2>
 
 Data wrangling is an essential step in data analysis. Since raw datasets often contain inconsistencies or missing values, they must be cleaned and prepared to enable accurate and reliable analysis.
 
 I applied data wrangling techniques in Python to clean the dataset before performing the analysis. Using Python libraries such as Pandas and Numpy in a Jupyter Notebook, I removed duplicate rows, imputed missing values, performed data normalization, and dropped irrelevant columns. The imputing technique generally replaces missing numeric data with the average and replaces missing categorical data with the most frequent. However, I purposely did not impute every missing value. Since the objective is to gather insights into developers' technologies, I left those columns alone because I did not want to affect the results by skewing the data. Additionally, I dropped columns that will not contribute to the final analysis to improve efficiency and reduce loading times. 
+
 
 👉 [Data Wrangling - Python repository](https://github.com/FaiLuReH3Ro/data-wrangling-py)
 

@@ -197,9 +197,61 @@ I conducted Exploratory Data Analysis (EDA) on the cleaned dataset using Python 
 
 👉 [Exploratory Data Analysis - Python repository](https://github.com/FaiLuReH3Ro/exploratory-da-py)
 
-<img src = 'Pictures/8.PNG'>
+#### Job Satisfaction Distribution
 
-<img src = 'Pictures/9.PNG'>
+```Python
+# Drop the NaN rows and store in a new df
+df_exp_sat = df[['YearsCodePro', 'JobSat']].dropna(ignore_index=True)
+
+# Create the ranges and labels
+ranges = [0, 5, 10, 20, 100]
+range_labels = ['0-5', '5-10', '10-20', '20+']
+
+# Create a new column with the range values
+df_exp_sat['YearsCodeProRange'] = pd.cut(df_exp_sat['YearsCodePro'], bins = ranges, labels = range_labels, include_lowest=True)
+
+# Plot the countplot
+# Can use the previous filtered df 
+plt.figure(figsize=(10, 6))
+sns.countplot(df_exp_sat, x= 'JobSat', hue = 'JobSat', dodge = False)
+plt.title("Distribution of Job Satisfaction")
+plt.xlabel("Job Satisfaction")
+plt.ylabel("Count")
+plt.legend().remove()
+plt.show()
+```
+
+![Job Satisfaction Distribution](Pictures/job_satisfaction.png)
+
+#### Distribution of Coder Type
+
+```Python
+# Find the counts of each role
+branch_counts = df['MainBranch'].value_counts()
+
+# Plot the pie chart
+labels = ['Pro Developer', 'Occasional Coder', 'Learner Coder', 'Hobby Coder', 'Former Developer']
+fig, ax = plt.subplots(figsize=(10,6))
+ax.pie(branch_counts.values, labels =labels, autopct='%1.1f%%', startangle=0)
+ax.set_title("Distribution of Coder Type", fontsize=20)
+plt.show()
+```
+
+![Coder Type Distribution](Pictures/coder_type.png)
+
+#### Distribution of Years Coding Professionally
+
+```Python
+# Plot the histogram
+fig, ax = plt.subplots(figsize=(10,6))
+ax.hist(df['YearsCodePro'], edgecolor='black')
+ax.set_title("Distribution of Professional Coding Experience (Years)")
+ax.set_ylabel("Frequency")
+ax.set_xlabel("Years")
+plt.show()
+```
+
+![Years Coding Pro Distribution](Pictures/pro_coding_years.png)
 
 <hr>
 

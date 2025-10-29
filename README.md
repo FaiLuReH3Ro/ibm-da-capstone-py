@@ -118,9 +118,76 @@ I applied data wrangling techniques in Python to clean the dataset before perfor
 
 👉 [Data Wrangling - Python repository](https://github.com/FaiLuReH3Ro/data-wrangling-py)
 
-<img src = 'Pictures/6.PNG'>
+### Imputing Missing Values in Numeric Columns
+```Python
+# Method 1 - fillna
 
-<img src = 'Pictures/7.PNG'>
+# Replacing the strings to a number
+df['YearsCode'].replace('Less than 1 year', '0', inplace = True)
+df['YearsCode'].replace('More than 50 years', '50', inplace = True)
+df['YearsCode'] = df['YearsCode'].astype(float)
+
+# Replace NaN values with the average
+avg_years = round(df['YearsCode'].mean(), 0)
+df['YearsCode'].fillna(avg_years, inplace = True)
+```
+
+### Imputing Missing Values in Categorical Columns
+```Python
+# Method 2 - replace
+
+# Finding the most frequent value
+freq_ed_level = df['EdLevel'].mode()[0]
+
+# Replace the NaN with most frequent value
+df['EdLevel'].replace(np.nan, freq_ed_level, inplace = True)
+```
+
+### Min-Max Scaling
+```Python
+# Creating a new column to place the normalized values
+df['YearsCode_MinMax'] = (df['YearsCode'] - df['YearsCode'].min()) / (df['YearsCode'].max() - df['YearsCode'].min())
+
+# Compare the normalized and original values
+df[['YearsCode_MinMax', 'YearsCode']].head()
+```
+
+| | YearsCode_MinMax | YearsCode |
+|:---:|:---:|:---:|
+| 1 | 0.40 | 20.0 |
+| 2 | 0.74 | 37.0 |
+| 3 | 0.08 | 4.0 |
+| 4 | 0.18 | 9.0 |
+| 5 | 0.20 | 10.0 |
+
+### Binning
+
+```Python
+# Create the ranges and labels
+ranges = [0, 3, 5, 8, 10, 100]
+
+# Store the names for each range
+range_labels = ['Entry', 'Mid', 'Senior', 'Lead', 'Architect']
+
+# Using the function cut to apply the bins
+df['ExperienceLevel'] = pd.cut(df['YearsCodePro'], bins = ranges, labels = range_labels, include_lowest=True, ordered=False)
+
+# Displaying 10 rows
+df[['YearsCodePro', 'ExperienceLevel']].sample(n = 10, random_state = 42)
+```
+
+| | YearsCodePro | ExperienceLevel |
+|:---:|:---:|:---:|
+| 39276 | 2.0 | Entry |
+| 2944 | 13.0 | Architect |
+| 64994 | 19.0 | Architect |
+| 39938 | 1.0 | Entry |
+| 34270 | 9.0 | Lead |
+| 14389 | 10.0 | Lead |
+| 22694 | 5.0 | Mid |
+| 30319 | 0.0 | Entry |
+| 51141 | 20.0 | Architect |
+| 27535 | 3.0 | Entry |
 
 <h2 id = 'exploratory-data'>🔍 Exploratory Data Analysis</h2>
 

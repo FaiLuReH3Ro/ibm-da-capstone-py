@@ -261,6 +261,113 @@ In this section, I addressed outliers to improve the variance in the compensatio
 
 👉 [Handling Outliers - Python repository](https://github.com/FaiLuReH3Ro/outliers-py)
 
+#### Create a SQLite Database
+
+```Python
+# Load the dataset
+data = pd.read_csv('clean_survey_data.csv')
+
+# Create a connection to the SQLite database named 'survey-data.db'
+conn = sqlite3.connect('survey-data.db')
+
+# Write the dataframe to the SQLite database as a table called 'main'
+data.to_sql('main', conn, if_exists='replace', index=False)
+
+# Run a query to check
+df = pd.read_sql("SELECT * FROM main", conn)
+```
+
+#### Handling Outliers in Yearly Compensation
+
+```Python
+# Finding the quartiles 
+df['ConvertedCompYearly'].describe()
+```
+| Statistic | Value |
+| :--- | :--- |
+| **count** | 2.335200e+04 |
+| **mean** | 8.516649e+04 |
+| **std** | 1.427830e+05 |
+| **min** | 1.000000e+00 |
+| **25%** | 3.286600e+04 |
+| **50%** | 6.500000e+04 |
+| **75%** | 1.080000e+05 |
+| **max** | 1.381802e+07 |
+
+```Python
+# Calculate the IQR
+Q1 = 3.286600e+04
+Q3 = 1.080000e+05
+IQR = Q3 - Q1
+
+# Finding the bounds
+lower_bounds = Q1 - (1.5 * IQR)
+upper_bounds = Q3 + (1.5 * IQR)
+
+# Create a new df with no outliers in CompTotal
+no_out_CompYear = df[(df['ConvertedCompYearly'] >= lower_bounds) & (df['ConvertedCompYearly'] <= upper_bounds)]
+
+# Create a new table called noOutCompY in the database
+no_out_CompYear.to_sql('noOutCompY', conn, if_exists='replace', index=False)
+```
+
+#### Yearly Compensation by Dev Type
+
+```Python
+# Create a cursor to execute a query
+cursor = conn.cursor()
+
+# Query to find the top 5 dev types
+# Store the result in a new view
+QUERY = """
+CREATE VIEW Top5Dev AS 
+SELECT DevType, COUNT(*) AS 'Count'
+FROM noOutCompY
+WHERE DevType IS NOT NULL
+GROUP BY DevType
+ORDER BY Count DESC
+LIMIT 5;
+"""
+
+# Execute the query
+cursor.execute(QUERY)
+
+# Preview the created view
+pd.read_sql("SELECT * FROM Top5Dev", conn)
+```
+| DevType | Count |
+| :--- | :--- |
+| Developer, full-stack | 8049 |
+| Developer, back-end | 4519 |
+| Developer, front-end | 1381 |
+| Developer, desktop or enterprise applications | 1019 |
+| Developer, mobile | 776 |
+
+```Python
+# Query for the top 5 developers types and their compensation
+QUERY = """
+SELECT DevType, ConvertedCompYearly
+FROM noOutCompY 
+WHERE DevType in (SELECT DevType FROM Top5Dev)
+"""
+
+# Read the query to a df
+top5_dev = pd.read_sql(QUERY, conn)
+
+# Plot the box plots
+fig, ax = plt.subplots(figsize=(10,8))
+sns.boxplot(top5_dev, x='ConvertedCompYearly',y='DevType',hue='DevType', ax = ax, dodge = False)
+ax.set_title("Box Plots of Yearly Compensation by Dev Type")
+ax.set_ylabel("Developer Type")
+ax.set_xlabel("Yearly Compensation", labelpad=10)
+ax.get_legend().remove()
+
+plt.show()
+```
+
+
+
+
 <img src = 'Pictures/10.PNG'>
 
 <img src = 'Pictures/11.PNG'>

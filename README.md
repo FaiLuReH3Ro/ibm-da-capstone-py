@@ -39,7 +39,7 @@ training, and investments in the right areas by providing data-driven insights a
 <ul>
   <li><strong>Languages:</strong> Python, SQL</li>
   <li><strong>Tools:</strong> Visual Studio Code, Jupyter notebook</li>
-  <li><strong>Data Collection:</strong> Web scraping, Jobs API (Requests, BeautifulSoup, Pandas)</li>
+  <!--<li><strong>Data Collection:</strong> Web scraping, Jobs API (Requests, BeautifulSoup, Pandas)</li>-->
   <li><strong>Data Wrangling:</strong> Cleaning, Normalizing (Pandas, Numpy)</li>
   <li><strong>Data Analysis:</strong> Exploratory, Statistical, Trends (Pandas, Matplotlib, Seaborn, SQLite, Numpy)</li>
   <li><strong>Data Visualization:</strong> Various Charts, Plots, or Graphs (Pandas, Matplotlib, Seaborn, SQLite)</li>
@@ -119,10 +119,10 @@ I applied data wrangling techniques in Python to clean the dataset before perfor
 👉 [Data Wrangling - Python repository](https://github.com/FaiLuReH3Ro/data-wrangling-py)
 
 ### Imputing Missing Values in Numeric Columns
-```Python
+```python
 # Method 1 - fillna
 
-# Replacing the strings to a number
+# Replacing the strings with a number
 df['YearsCode'].replace('Less than 1 year', '0', inplace = True)
 df['YearsCode'].replace('More than 50 years', '50', inplace = True)
 df['YearsCode'] = df['YearsCode'].astype(float)
@@ -133,18 +133,18 @@ df['YearsCode'].fillna(avg_years, inplace = True)
 ```
 
 ### Imputing Missing Values in Categorical Columns
-```Python
+```python
 # Method 2 - replace
 
 # Finding the most frequent value
 freq_ed_level = df['EdLevel'].mode()[0]
 
-# Replace the NaN with most frequent value
+# Replace the NaN with the most frequent value
 df['EdLevel'].replace(np.nan, freq_ed_level, inplace = True)
 ```
 
 ### Min-Max Scaling
-```Python
+```python
 # Creating a new column to place the normalized values
 df['YearsCode_MinMax'] = (df['YearsCode'] - df['YearsCode'].min()) / (df['YearsCode'].max() - df['YearsCode'].min())
 
@@ -162,7 +162,7 @@ df[['YearsCode_MinMax', 'YearsCode']].head()
 
 ### Binning
 
-```Python
+```python
 # Create the ranges and labels
 ranges = [0, 3, 5, 8, 10, 100]
 
@@ -199,7 +199,7 @@ I conducted Exploratory Data Analysis (EDA) on the cleaned dataset using Python 
 
 #### Job Satisfaction Distribution
 
-```Python
+```python
 # Drop the NaN rows and store in a new df
 df_exp_sat = df[['YearsCodePro', 'JobSat']].dropna(ignore_index=True)
 
@@ -225,7 +225,7 @@ plt.show()
 
 #### Distribution of Coder Type
 
-```Python
+```python
 # Find the counts of each role
 branch_counts = df['MainBranch'].value_counts()
 
@@ -241,7 +241,7 @@ plt.show()
 
 #### Distribution of Years Coding Professionally
 
-```Python
+```python
 # Plot the histogram
 fig, ax = plt.subplots(figsize=(10,6))
 ax.hist(df['YearsCodePro'], edgecolor='black')
@@ -263,7 +263,7 @@ In this section, I addressed outliers to improve the variance in the compensatio
 
 #### Create a SQLite Database
 
-```Python
+```python
 # Load the dataset
 data = pd.read_csv('clean_survey_data.csv')
 
@@ -294,7 +294,7 @@ df['ConvertedCompYearly'].describe()
 | **75%** | 1.080000e+05 |
 | **max** | 1.381802e+07 |
 
-```Python
+```python
 # Calculate the IQR
 Q1 = 3.286600e+04
 Q3 = 1.080000e+05
@@ -313,7 +313,7 @@ no_out_CompYear.to_sql('noOutCompY', conn, if_exists='replace', index=False)
 
 #### Yearly Compensation by Dev Type
 
-```Python
+```python
 # Create a cursor to execute a query
 cursor = conn.cursor()
 
@@ -343,8 +343,8 @@ pd.read_sql("SELECT * FROM Top5Dev", conn)
 | Developer, desktop or enterprise applications | 1019 |
 | Developer, mobile | 776 |
 
-```Python
-# Query for the top 5 developers types and their compensation
+```python
+# Query for the top 5 developer types and their compensation
 QUERY = """
 SELECT DevType, ConvertedCompYearly
 FROM noOutCompY 
@@ -365,14 +365,7 @@ ax.get_legend().remove()
 plt.show()
 ```
 
-
-
-
-<img src = 'Pictures/10.PNG'>
-
-<img src = 'Pictures/11.PNG'>
-
-<img src = 'Pictures/12.PNG'>
+![Box Plots of Yearly Compensation by Dev Type](Pictures/yearly_comp_by_dev.png)
 
 <hr>
 
@@ -381,6 +374,103 @@ plt.show()
 Using the tables in the created database in SQLite, I will explore the data further by finding correlations and trends between various columns. I utilized Python visualization libraries such as Matplotlib and Seaborn to create scatter plots, line plots, and a heat map to show trends and correlations between numeric data. 
 
 👉 [Finding Correlations - Python repository](https://github.com/FaiLuReH3Ro/correlations-py)
+
+#### Age Correlation Matrix
+```python
+import random
+# Function provides a random age between the age ranges
+# Ages below 18 and above 65 would have a reasonable range
+def randAge(data):
+    if '18-24' in data:
+        return random.randint(18, 25)
+    elif '25-34' in data:
+        return random.randint(25, 35)
+    elif '35-44' in data:
+        return random.randint(35, 45)
+    elif '45-54' in data:
+        return random.randint(45, 55)
+    elif '55-64' in data:
+        return random.randint(55, 65)
+    elif '65' in data:
+        return random.randint(65, 80)
+    elif 'Under' in data:
+        return random.randint(13, 18)
+    else:
+        return None
+```
+
+```python
+# Selects the target columns from the main table
+QUERY = """
+SELECT Age, YearsCode, YearsCodePro, WorkExp
+FROM main
+"""
+
+# Read the query to a df
+age_corr = pd.read_sql(QUERY, conn)
+
+# Create a new column to store the ages
+# Apply the function to the Age column
+age_corr['Age_Num'] = age_corr['Age'].apply(randAge)
+
+# Create a table to show the correlations 
+age_corr_matrix = age_corr[['Age_Num', 'YearsCode', 'YearsCodePro', 'WorkExp']].corr()
+```
+
+| | Age_Num | YearsCode | YearsCodePro | WorkExp |
+| :--- | :---: | :---: | :---: | :---: |
+| **Age_Num** | 1.000000 | 0.771054 | 0.694779 | 0.820254 |
+| **YearsCode** | 0.771054 | 1.000000 | 0.834460 | 0.866637 |
+| **YearsCodePro** | 0.694779 | 0.834460 | 1.000000 | 0.911976 |
+| **WorkExp** | 0.820254 | 0.866637 | 0.911976 | 1.000000 |
+
+```python
+# Create a heatmap to show the correlation matrix
+fig, ax = plt.subplots(figsize=(10,6))
+sns.heatmap(age_corr_matrix, annot=True, vmin=-1, vmax=1,ax = ax)
+ax.set_title("Correlation Matrix of Age")
+plt.show()
+```
+
+#### Age and Work Experience Relationship
+
+```python
+# Plot the scatter plot
+fig, ax = plt.subplots(figsize=(10,6))
+sns.scatterplot(age_corr, x='Age_Num', y='WorkExp', ax=ax)
+ax.set_title("Relationship Between Age and Work Experience")
+ax.set_ylabel("Work Experience (Years)")
+ax.set_xlabel("Age")
+plt.show()
+```
+
+#### Trends in Work Experience by Yearly Compensation
+
+```python
+# Select column from the correct table
+QUERY = """
+SELECT ConvertedCompYearly, WorkExp
+FROM noOutCompY
+WHERE WorkExp IS NOT NULL
+"""
+
+# Read to a df
+df_exp_compY = pd.read_sql(QUERY, conn)
+
+# Group each year and calculate the median age
+exp_compY_group = df_exp_compY.groupby('WorkExp')['ConvertedCompYearly'].median().reset_index()
+
+# Plot the line plot
+fig, ax = plt.subplots(figsize=(10,6))
+ax.plot(exp_compY_group['WorkExp'], exp_compY_group['ConvertedCompYearly'])
+ax.set_title("Trends for Compensation and Work Experience")
+ax.set_ylabel("Median Yearly Compensation")
+ax.set_xlabel("Work Experience (Years)")
+plt.show()
+```
+
+
+
 
 <img src = 'Pictures/13.PNG'>
 

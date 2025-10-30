@@ -432,6 +432,8 @@ ax.set_title("Correlation Matrix of Age")
 plt.show()
 ```
 
+![Correlation Matrix of Age](Pictures/age_correlation_matrix.png)
+
 #### Age and Work Experience Relationship
 
 ```python
@@ -443,6 +445,8 @@ ax.set_ylabel("Work Experience (Years)")
 ax.set_xlabel("Age")
 plt.show()
 ```
+
+![Relationship Between Age and Work Experience](Pictures/age_and_workexp.png)
 
 #### Trends in Work Experience by Yearly Compensation
 
@@ -469,12 +473,7 @@ ax.set_xlabel("Work Experience (Years)")
 plt.show()
 ```
 
-
-
-
-<img src = 'Pictures/13.PNG'>
-
-<img src = 'Pictures/14.PNG'>
+![Trend of Median Compensation by Age](Pictures/comp_workexp_trends.png)
 
 <h2 id = 'data-visualization'>📈 Data Visualization</h2>
 
@@ -482,9 +481,96 @@ In this part, I will apply data visualization in Python to discover insights abo
 
 👉 [Data Visualization - Python repository](https://github.com/FaiLuReH3Ro/data-visualization-py)
 
-<img src = 'Pictures/15.PNG'>
+### Programming Languages
 
-<img src = 'Pictures/16.PNG'>
+#### Worked With
+
+```python
+# Select languages worked with
+QUERY = """SELECT LanguageHaveWorkedWith FROM main"""
+
+# Read to df
+df_lang_worked = pd.read_sql(QUERY, conn)
+
+# Split by the separator
+df_lang_worked['LanguageHaveWorkedWith'] = df_lang_worked['LanguageHaveWorkedWith'].str.split(";")
+
+# Explode the df
+df_lang_worked = df_lang_worked.explode('LanguageHaveWorkedWith')
+
+# Find the top 10 languages
+top10_lang_worked = df_lang_worked['LanguageHaveWorkedWith'].value_counts().sort_values(ascending=False).head(10).reset_index()
+```
+| LanguageHaveWorkedWith | count |
+| :--- | :--- |
+| JavaScript | 37492 |
+| HTML/CSS | 31816 |
+| Python | 30719 |
+| SQL | 30682 |
+| TypeScript | 23150 |
+| Bash/Shell (all shells) | 20412 |
+| Java | 18239 |
+| C# | 16318 |
+| C++ | 13827 |
+| C | 12184 |
+
+#### Want to Work With
+
+```python
+# Select languages respondents want to work with
+QUERY = """SELECT LanguageWantToWorkWith FROM main"""
+
+# Read to df
+df_lang_want = pd.read_sql(QUERY, conn)
+
+# Split the values into an array
+df_lang_want['LanguageWantToWorkWith'] = df_lang_want['LanguageWantToWorkWith'].str.split(";")
+
+# Explode the df
+df_lang_want = df_lang_want.explode('LanguageWantToWorkWith')
+
+# Finding the top 10
+top10_lang_want = df_lang_want['LanguageWantToWorkWith'].value_counts().sort_values(ascending=False).head(10).reset_index()
+```
+
+| LanguageWantToWorkWith | count |
+| :--- | :--- |
+| Python | 25047 |
+| JavaScript | 23774 |
+| SQL | 22400 |
+| HTML/CSS | 20721 |
+| TypeScript | 20239 |
+| Rust | 17232 |
+| Go | 13837 |
+| Bash/Shell (all shells) | 13744 |
+| C# | 12921 |
+| C++ | 10873 |
+
+#### Visualizing
+
+```python
+fig, axes = plt.subplots(2,1, figsize=(10,10))
+fig.suptitle("Top 10 Languages: Worked With & Wanted", fontsize=20)
+
+# Bar graph #1 - Top 10 Languages Worked With
+sns.barplot(top10_lang_worked, x='count', y='LanguageHaveWorkedWith', hue='LanguageHaveWorkedWith', edgecolor = 'black', ax=axes[0], dodge = False)
+axes[0].set_title("Languages Used")
+axes[0].set_ylabel("Programming Language")
+axes[0].set_xlabel("Count")
+axes[0].get_legend().remove()
+
+# Bar graph #2 - Top 10 Languages Wanted
+sns.barplot(top10_lang_want, x='count', y='LanguageWantToWorkWith', hue='LanguageWantToWorkWith', edgecolor = 'black', ax=axes[1], dodge = False)
+axes[1].set_title("Languages Wanted")
+axes[1].set_ylabel("Programming Language")
+axes[1].set_xlabel("Count")
+axes[1].get_legend().remove()
+
+plt.tight_layout()
+plt.show()
+```
+
+![Top 10 languages worked with and want to work with together](Pictures/program_lang_worked.png)
 
 <h2 id = 'dashboard'>🖥️ Dashboard Creation</h2>
 
